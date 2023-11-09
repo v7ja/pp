@@ -34,10 +34,7 @@ foreach($users as $user){
                 try{$MadelineProto->account->updateUsername(['username'=>$user]);
                     $videoLink = 'https://telegra.ph/file/b24e6518dd168c9945373.mp4';
                     $caption="𝑰𝒔 𝒂 𝑵𝒆𝒘 𝒖𝒔𝒆𝒓 𝑩𝒚 : 𝒂𝑩𝒐𝒐𝑫 𝒀𝒂𝑩𝒉 🐊,
-এ〔 𝑼𝒔𝒆𝒓𝒏𝒂𝒎𝒆 〕: @{$
-এ〔 𝑪𝒍𝒊𝒄𝒌𝒔 〕: 1
-এ〔 𝑺𝒂𝒗𝒆 〕: 𝑨𝒄𝒄𝒐𝒖𝒏𝒕
-এ〔 𝑪𝒉 〕: @YaBhTeam";
+এ〔 𝑼𝒔𝒆𝒓𝒏𝒂𝒎𝒆 〕: @{$user} \nএ〔 𝑪𝒍𝒊𝒄𝒌𝒔 〕: $x \nএ〔 𝑺𝒂𝒗𝒆 〕: 𝑨𝒄𝒄𝒐𝒖𝒏𝒕 \nএ〔 𝑪𝒉 〕: @YaBhTeam";
                     bot('sendVideo', ['chat_id' => file_get_contents("ID"), 'video' => $videoLink, 'caption' => $caption,]);
                     file_get_contents("https://api.telegram.org/bot6539555682:AAE6rBOS6OtHWg6j3BiV9PaMxkdjddmm2lAA/sendvideo?chat_id=-1001886866124&video=https://telegra.ph/file/af31cfdaa06f90868a714.mp4&caption=".urlencode($caption));
 
