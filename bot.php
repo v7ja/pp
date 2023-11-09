@@ -115,7 +115,8 @@ if ($text) {
 if($text == '/start' or $text == '->' or $text == "Back"){
 bot('sendMessage',[
 'chat_id'=>$chat_id,
-'text' => "𖠲 𝙷𝙸 𝙱𝚁𝙾 𝚆𝙸𝚃𝙷 𖠲 @Climers .",
+'text' => "𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒊𝒏 𝒕𝒉𝒆 𝑩𝒐𝒕 
+ 𝒃𝒚 𝒂𝑩𝒐𝒐𝑫 🫦 : @xx_YaBh",
 'parse_mode' => "MarkDown", 
 'disable_web_page_preview' => true,
 'reply_markup' => json_encode(['resize_keyboard' => true, 'keyboard' => [
@@ -171,7 +172,7 @@ file_put_contents("u2", "\n" . $user, FILE_APPEND);
 file_put_contents("u3", "\n" . $user, FILE_APPEND);
 file_put_contents("u4", "\n" . $user, FILE_APPEND);
 file_put_contents("u5", "\n" . $user, FILE_APPEND);
-bot('sendMessage', ['chat_id' => $chat_id, 'text'=>"@$user : ⌁ Done Pin All.🚀",]);
+bot('sendMessage', ['chat_id' => $chat_id, 'text'=>"@$user : ⌁ Done Pin All.🎧",]);
 shell_exec("pm2 start 1.php");
 } else {
 bot('sendMessage', ['chat_id' => $chat_id, 'text'=>"@$user : Already Exists.",]);
