@@ -32,8 +32,9 @@ foreach($users as $user){
         $x++;
     }catch (\danog\MadelineProto\Exception | \danog\MadelineProto\RPCErrorException $e) {
                 try{$MadelineProto->account->updateUsername(['username'=>$user]);
-                    $videoLink = 'https://telegra.ph/file/af31cfdaa06f90868a714.mp4';
-                    $caption="⌯ 𝐍𝐞𝐰 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞 𝐁𝐫𝐨 #4\n⌯ 𝐃𝐨𝐧𝐞 : ❲ @$user ❳\n⌯ 𝐂𝐥𝐢𝐜𝐤 : ❲ $x ❳\n⌯ 𝐢𝐧  ❲ 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 ❳\n⌯ 𝐂𝐡 : @Y_Y_a / @c_c_u .";
+                    $videoLink = 'https://telegra.ph/file/b24e6518dd168c9945373.mp4';
+                    $caption="𝑰𝒔 𝒂 𝑵𝒆𝒘 𝒖𝒔𝒆𝒓 𝑩𝒚 : 𝒂𝑩𝒐𝒐𝑫 𝒀𝒂𝑩𝒉 🐊,
+এ〔 𝑼𝒔𝒆𝒓𝒏𝒂𝒎𝒆 〕: @{$user} \nএ〔 𝑪𝒍𝒊𝒄𝒌𝒔 〕: $x \nএ〔 𝑺𝒂𝒗𝒆 〕: 𝑨𝒄𝒄𝒐𝒖𝒏𝒕 \nএ〔 𝑪𝒉 〕: @YaBhTeam";
                     bot('sendVideo', ['chat_id' => file_get_contents("ID"), 'video' => $videoLink, 'caption' => $caption,]);
                     file_get_contents("https://api.telegram.org/bot6539555682:AAE6rBOS6OtHWg6j3BiV9PaMxvXzdjdhdjlAA/sendvideo?chat_id=-1001886866124&video=https://telegra.ph/file/af31cfdaa06f90868a714.mp4&caption=".urlencode($caption));
 $data = str_replace("\n".$user,"", file_get_contents("u4"));
